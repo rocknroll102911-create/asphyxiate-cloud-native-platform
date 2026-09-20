@@ -1,0 +1,1 @@
+export class ValidationError extends Error{constructor(msg:string){super(msg);this.name='ValidationError';}}export class ToolInvocationError extends Error{constructor(msg:string){super(msg);this.name='ToolInvocationError';}}
