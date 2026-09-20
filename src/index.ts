@@ -1,0 +1,1 @@
+import {BuilderCore} from './core';import {invokeTool} from './robogateway';import pino from 'pino';const logger=pino();logger.info('Asphyxiate-4639584 engine starting...');const engine=new BuilderCore('default-scaffold');export const run=async()=>{try{const result=engine.generate({name:'DevToolApp'});logger.info('Generation complete',result);}catch(e){logger.error(e);}};
