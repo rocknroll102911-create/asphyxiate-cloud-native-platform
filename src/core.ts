@@ -1,0 +1,1 @@
+import {z} from 'zod';export class BuilderCore{private scaffoldId:string;constructor(id:string){this.scaffoldId=id;}validate(schema:z.ZodSchema,input:any){return schema.parse(input);}generate(spec:any){return {files:[{path:'config.json',content:JSON.stringify(spec)}],graph:{nodes:[],edges:[]}};}}
